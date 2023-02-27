@@ -10,5 +10,11 @@ namespace EpicProjectTest
             int res = EpicClass.ReturnOne();
             Assert.Equal(1, res);
         }
+
+        [Fact]
+        public void TestThatNeverPass()
+        {
+            Assert.True(false);
+        }
     }
 }
